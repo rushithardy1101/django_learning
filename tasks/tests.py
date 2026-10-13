@@ -45,6 +45,3 @@ class TasksViewTest(TestCase):
         response = self.client.get(self.url)
         self.assertContains(response, "View Test Task")
         self.assertContains(response, "Testing the web page view")
-        
-    def test_pipeline_sanity_check(self):
-        self.assertTrue(True)
